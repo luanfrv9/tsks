@@ -122,9 +122,9 @@ describe('apiUserSignup', () => {
       expect(createUser).toHaveBeenCalled()
     })
 
-    it('saves refresh token on db', () => {
-      // TODO: called with refresh_token
-      //expect(createUser).toHaveBeenCalledWith()
-    })
+    // TODO: called with refresh_token
+    // it('saves refresh token on db', () => {
+    //   expect(createUser).toHaveBeenCalledWith()
+    // })
   })
 })
