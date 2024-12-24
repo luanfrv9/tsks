@@ -97,12 +97,14 @@
 ```json
 {
   "ok": true,
-  "user": {
-    "id": 0,
-    "email": "<email>",
-    "auth_token": "<token>",
-    "created_at": "<date>",
-    "updated_at": "<date>"
+  "data": {
+    "user": {
+      "id": 0,
+      "email": "<email>",
+      "access_token": "<token>",
+      "created_at": "<date>",
+      "updated_at": "<date>"
+    }
   }
 }
 ```
@@ -129,12 +131,14 @@
 ```json
 {
   "ok": true,
-  "user": {
-    "id": 0,
-    "email": "<email>",
-    "auth_token": "<token>",
-    "created_at": "<date>",
-    "updated_at": "<date>"
+  "data": {
+    "user": {
+      "id": 0,
+      "email": "<email>",
+      "access_token": "<token>",
+      "created_at": "<date>",
+      "updated_at": "<date>"
+    }
   }
 }
 ```
@@ -163,16 +167,18 @@
 ```json
 {
   "ok": true,
-  "tsks": [
-    {
-      "id": 0,
-      "tsk": "<t>",
-      "context": "<ctx>",
-      "status": "todo|doing|done",
-      "created_at": "<date>",
-      "updated_at": "<date>"
-    }
-  ]
+  "data": {
+    "tsks": [
+      {
+        "id": 0,
+        "tsk": "<t>",
+        "context": "<ctx>",
+        "status": "todo|doing|done",
+        "created_at": "<date>",
+        "updated_at": "<date>"
+      }
+    ]
+  }
 }
 ```
 
@@ -200,13 +206,15 @@
 ```json
 {
   "ok": true,
-  "tsk": {
-    "id": 0,
-    "tsk": "<t>",
-    "context": "<ctx>",
-    "status": "todo|doing|done",
-    "created_at": "<date>",
-    "updated_at": "<date>"
+  "data": {
+    "tsk": {
+      "id": 0,
+      "tsk": "<t>",
+      "context": "<ctx>",
+      "status": "todo|doing|done",
+      "created_at": "<date>",
+      "updated_at": "<date>"
+    }
   }
 }
 ```
@@ -236,13 +244,15 @@
 ```json
 {
   "ok": true,
-  "tsk": {
-    "id": 0,
-    "tsk": "<t>",
-    "context": "<ctx>",
-    "status": "todo|doing|done",
-    "created_at": "<date>",
-    "updated_at": "<date>"
+  "data": {
+    "tsk": {
+      "id": 0,
+      "tsk": "<t>",
+      "context": "<ctx>",
+      "status": "todo|doing|done",
+      "created_at": "<date>",
+      "updated_at": "<date>"
+    }
   }
 }
 ```
@@ -266,8 +276,10 @@
 ```json
 {
   "ok": false,
-  "message": "400 Bad Request",
-  "status_code": 400
+  "error": {
+    "message": "400 Bad Request",
+    "status_code": 400
+  }
 }
 ```
 
@@ -276,8 +288,10 @@
 ```json
 {
   "ok": false,
-  "message": "401 Unauthorized",
-  "status_code": 401
+  "error": {
+    "message": "401 Unauthorized",
+    "status_code": 401
+  }
 }
 ```
 
@@ -286,8 +300,10 @@
 ```json
 {
   "ok": false,
-  "message": "403 Forbidden",
-  "status_code": 403
+  "error": {
+    "message": "403 Forbidden",
+    "status_code": 403
+  }
 }
 ```
 
@@ -296,8 +312,10 @@
 ```json
 {
   "ok": false,
-  "message": "404 Not Found",
-  "status_code": 404
+  "error": {
+    "message": "404 Not Found",
+    "status_code": 404
+  }
 }
 ```
 
@@ -306,8 +324,10 @@
 ```json
 {
   "ok": false,
-  "message": "409 Conflict",
-  "status_code": 409
+  "error": {
+    "message": "409 Conflict",
+    "status_code": 409
+  }
 }
 ```
 
@@ -316,8 +336,10 @@
 ```json
 {
   "ok": false,
-  "message": "422 Unprocessable Entity",
-  "status_code": 422
+  "error": {
+    "message": "422 Unprocessable Entity",
+    "status_code": 422
+  }
 }
 ```
 
@@ -326,7 +348,9 @@
 ```json
 {
   "ok": false,
-  "message": "500 Server Error",
-  "status_code": 500
+  "error": {
+    "message": "500 Server Error",
+    "status_code": 500
+  }
 }
 ```

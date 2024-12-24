@@ -105,3 +105,9 @@
     - add pages/api/tsks
     * update NEXT_PUBLIC_API_URL to be /api
     - get all env vars and setup vercel
++ update api doc
+    * return the prop `data` by default for all related endpointed
+        - i.g. `{ok: true, data: {user, accessToken}}`
+    * return the prop `error` by default for all related endpointed
+        - i.g. `{ok: false, error: {message, status_code}}`
+    - update frontend implementation
