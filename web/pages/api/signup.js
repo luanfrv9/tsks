@@ -1,14 +1,10 @@
-import { apiUserSignup } from "../../services"
+import {apiUserSignup} from '../../services'
 
 export default async function handler(req, res) {
   const {email, password} = req.body
-  const {user, accessToken} = await apiUserSignup({email, password})
+  const {data, error, ok} = await apiUserSignup({email, password})
+  const {status_code} = error
+  const response = ok ? {ok, data} : {ok, error}
 
-  if (user) {
-    try {
-      res.status(201).json({ ok: true, user, auth_token: accessToken })
-    } catch (e) {
-      res.status(500).json({ ok: false, message: '500 Internal Server Error' })
-    }
-  }
+  return res.status(status_code).json(response)
 }
