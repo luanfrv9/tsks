@@ -18,6 +18,7 @@ export default function SignUp() {
 
   async function handleSubmit({email, password}) {
     setIsLoading(true)
+    // TODO: call hook useSignUp
     const {ok, data, error, isReady} = await signUpUser({email, password})
     setIsLoading(!isReady)
 
