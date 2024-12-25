@@ -37,7 +37,8 @@ export async function apiUserSignup({email, password}) {
       ok: true,
       data: {
         user,
-        accessToken,
+        access_token: accessToken,
+        refresh_token: refreshToken
       }
     }
   }
