@@ -38,8 +38,9 @@
     "@storybook/react": "^8.2.5",
     "@storybook/test": "^8.2.5",
     "@storybook/theming": "^8.2.5",
-    "@testing-library/jest-dom": "^6.4.8",
-    "@testing-library/react": "^16.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
     "@types/jest": "^29.5.14",
     "cypress": "^8.3.0",
     "drizzle-kit": "^0.28.1",
@@ -53,6 +54,7 @@
     "jest-localstorage-mock": "^2.4.26",
     "prettier": "^2.4.0",
     "react-test-renderer": "^17.0.2",
-    "storybook": "^8.2.5"
+    "storybook": "^8.2.5",
+    "ts-node": "^10.9.2"
   }
 }
