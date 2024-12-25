@@ -105,6 +105,9 @@
     - add pages/api/tsks
     * update NEXT_PUBLIC_API_URL to be /api
     - get all env vars and setup vercel
+    - fix test dependencies error
+    - test implementation for POST /api/signup
+    - write hooks/useSignUp
 + update api doc
     * return the prop `data` by default for all related endpointed
         - i.g. `{ok: true, data: {user, accessToken}}`
