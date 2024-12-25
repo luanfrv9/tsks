@@ -154,7 +154,9 @@ const config = {
   testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
-  // testEnvironmentOptions: {},
+  testEnvironmentOptions: {
+    customExportConditions: [] // don't load "browser" field
+  },
 
   // Adds a location field to test results
   // testLocationInResults: false,
