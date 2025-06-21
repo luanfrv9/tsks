@@ -4,8 +4,8 @@ services:
     build: ./api
     ports:
       - "3000:3000"
-    environment:
-      RAILS_ENV: production
+    env_file:
+      - ./api/.env
     networks:
       - app-network
   web:
