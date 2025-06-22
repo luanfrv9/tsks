@@ -1,0 +1,7 @@
+.tsk-subtsk {
+  display: flex;
+  gap: 1.5rem;
+  vertical-align: center;
+  list-style-type: none;
+  margin-top: 0.5rem;
+}

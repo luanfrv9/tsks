@@ -1,0 +1,9 @@
+.tsk-input {
+  min-width: 500px;
+  height: 2.2rem;
+  padding-left: 1rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+}

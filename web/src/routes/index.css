@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dosis:wght@200..800&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-family: "Caveat", cursive;
   background: linear-gradient(to bottom, transparent, #fff) #eceeef;
 }
 
@@ -65,8 +67,14 @@ main {
   padding: 0.6rem 0.9rem;
   font-size: 1.05rem;
   font-family:
-    Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+    Menlo,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New,
+    monospace;
 }
 
 .container-box .grid {

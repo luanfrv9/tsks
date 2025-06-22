@@ -1,0 +1,15 @@
+.subtsks-wrapper {
+  margin-top: 0.5rem;
+}
+
+.tsk-subtsks-title {
+  display: flex;
+  align-items: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2rem;
+}
+
+.tsk-subtsks-title:before {
+  content: ">";
+  margin-right: 0.5rem;
+}
