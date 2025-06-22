@@ -1,6 +1,6 @@
 FROM node:20
 WORKDIR /app
 COPY . .
-RUN npm run deploy
+RUN npx modern deploy
 CMD ["node", ".output/index.js"]
 
