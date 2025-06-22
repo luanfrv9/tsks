@@ -3,5 +3,5 @@ WORKDIR /app
 COPY . .
 RUN npm install
 RUN npm run deploy
-CMD ["node", ".output/index.js"]
+CMD ["npm", "run", "serve"]
 
